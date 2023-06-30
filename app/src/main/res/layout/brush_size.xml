@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Brush Size"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+       >
+
+    </TextView>
+
+    <SeekBar
+        android:id="@+id/brush_size_seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:padding="5dp"
+        android:layout_below="@+id/head"
+        android:layout_centerHorizontal="true"
+        android:progressTint="#7AF0FF"
+        android:thumbTint="#44AAB6">
+
+    </SeekBar>
+
+    <TextView
+        android:id="@+id/brush_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brush_size_seek"
+        android:layout_marginTop="0dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        tools:text="thickness value">
+
+    </TextView>
+
+</RelativeLayout>
